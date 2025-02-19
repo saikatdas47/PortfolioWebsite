@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900 text-gray-100">
+    <!-- Header Section -->
+    <header class="bg-gray-800 shadow">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold"> <a href="index.html" class="block hover:text-gray-300">Saikat Das</a>
+                </h1>
+                <div class="flex items-center space-x-4">
+                    <!-- Hamburger Menu Button (Visible on Mobile) -->
+                    <button id="menu-toggle" class="lg:hidden focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Desktop Navigation (Hidden on Mobile) -->
+                <nav class="hidden lg:flex space-x-4">
+                    <a href="#about" class="hover:text-blue-500">About</a>
+                    <a href="#projects" class="hover:text-blue-500">Projects</a>
+                    <a href="#contact" class="hover:text-blue-500">Contact</a>
+                    <a href="#" class="hover:text-blue-500">News</a>
+                    <a href="#" class="hover:text-blue-500">Research</a>
+                    <a href="#" class="hover:text-blue-500">Publications</a>
+                    <a href="#" class="hover:text-blue-500">Services</a>
+                    <a href="#" class="hover:text-blue-500">Education</a>
+                    <a href="#" class="hover:text-blue-500">CV</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+        <div
+            class="fixed inset-y-0 right-0 w-64 bg-gray-800 shadow-lg transform transition-transform duration-300 translate-x-full">
+            <div class="flex justify-end p-4">
+                <button id="close-menu" class="focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <nav class="p-4">
+                <a href="#about" class="block py-3 text-lg hover:text-blue-500">About</a>
+                <a href="#projects" class="block py-3 text-lg hover:text-blue-500">Projects</a>
+                <a href="#contact" class="block py-3 text-lg hover:text-blue-500">Contact</a>
+                <a href="#" class="block py-3 text-lg hover:text-blue-500">News</a>
+                <a href="#" class="block py-3 text-lg hover:text-blue-500">Research</a>
+                <a href="#" class="block py-3 text-lg hover:text-blue-500">Publications</a>
+                <a href="#" class="block py-3 text-lg hover:text-blue-500">Services</a>
+                <a href="#" class="block py-3 text-lg hover:text-blue-500">Education</a>
+                <a href="#" class="block py-3 text-lg hover:text-blue-500">CV</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+    <section class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto">
+            <div class="flex flex-col lg:flex-row items-center justify-between">
+                <!-- Image Div (1/3 width on large screens) -->
+                <div class="w-full lg:w-1/3 mb-8 lg:mb-0 flex flex-col items-center justify-center">
+                    <!-- Image with reduced size and rounded corners -->
+                    <img src="images/dp2.jpg" alt="Profile Picture"
+                        class="rounded-full shadow-lg w-48 h-48 lg:w-56 lg:h-56 object-cover">
+                    <p class="text-lg mt-6 text-center p-5">
+                        CSE Student | AI | NLP | Bioinformatics | mHealth | Game Dev | Python | Unity | ML | Research |
+                        AUST
+                    </p>
+                </div>
+                <!-- Description Div (2/3 width on large screens) -->
+                <div class="w-full lg:w-2/3 lg:pl-12 text-center lg:text-left p-6">
+                    <h2 class="text-4xl font-bold mb-4">Greetings! 🦋</h2>
+                    <p class="mt-2 mb-6">
+                        I am Saikat Das, a passionate learner and a student of Computer Science & Engineering at
+                        Ahsanullah University of Science and Technology.
+                        My interests lie in Machine Learning, Bioinformatics, and Natural Language Processing.
+                        My career aspiration is to work in leading AI research laboratories. Feel free to
+                        collaborate or contact me!
+                    </p>
+                    <a href="#contact"
+                        class="bg-white text-blue-600 px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
+                        Get in Touch
+                    </a>
+
+                    <!-- Social Media Links and Navigation List -->
+                    <div class="mt-8">
+                        <!-- Navigation Links with Hover Effect -->
+                        <ul class="nav flex-column w-100">
+                            <li class="nav-item">
+                                <a href="mailto:saikatdasmain47@gmail.com"
+                                    class="nav-link text-white hover:text-blue-400 transition duration-300">
+                                    Email
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white hover:text-blue-400 transition duration-300">
+                                    Google Scholar
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://www.researchgate.net/profile/Saikat-Das-69"
+                                    class="nav-link text-white hover:text-blue-400 transition duration-300">
+                                    ResearchGate
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://www.linkedin.com/in/saikatdas47"
+                                    class="nav-link text-white hover:text-blue-400 transition duration-300">
+                                    LinkedIn
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/saikatdas47"
+                                    class="nav-link text-white hover:text-blue-400 transition duration-300">
+                                    GitHub
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- Social Media Icons with Hover Effect -->
+                        <div class="d-flex justify-around w-full mt-4 space-x-6">
+                            <a href="https://www.facebook.com/theroyloard/" target="_blank"
+                                class="text-white hover:text-blue-400 transition duration-300">
+                                <i class="fab fa-facebook text-2xl"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank"
+                                class="text-white hover:text-blue-400 transition duration-300">
+                                <i class="fab fa-twitter text-2xl"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@theroyloard" target="_blank"
+                                class="text-white hover:text-blue-400 transition duration-300">
+                                <i class="fab fa-youtube text-2xl"></i>
+                            </a>
+                            <a href="https://www.instagram.com/theroyloard/" target="_blank"
+                                class="text-white hover:text-blue-400 transition duration-300">
+                                <i class="fab fa-instagram text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-600">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
+            <p class="text-lg text-center max-w-2xl mx-auto">
+                Hi, I'm John Doe, a web developer with expertise in HTML, CSS, JavaScript, and Tailwind CSS. I love
+                creating responsive and user-friendly websites.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-gray-800 py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-8">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project Cards -->
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">Project 1</h3>
+                    <p>Description of Project 1.</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">Project 2</h3>
+                    <p>Description of Project 2.</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">Project 3</h3>
+                    <p>Description of Project 3.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-8">Contact Me</h2>
+            <form class="max-w-2xl mx-auto">
+                <div class="mb-4">
+                    <label for="name" class="block text-lg mb-2">Name</label>
+                    <input type="text" id="name" class="w-full p-2 border rounded-lg bg-gray-700 text-gray-100">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-lg mb-2">Email</label>
+                    <input type="email" id="email" class="w-full p-2 border rounded-lg bg-gray-700 text-gray-100">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-lg mb-2">Message</label>
+                    <textarea id="message" class="w-full p-2 border rounded-lg bg-gray-700 text-gray-100"
+                        rows="5"></textarea>
+                </div>
+                <button type="submit"
+                    class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+
+</html>
